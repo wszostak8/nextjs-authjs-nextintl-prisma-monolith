@@ -1,0 +1,289 @@
+{
+  "navigation": {
+    "Dashboard": "Dashboard",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "Comprehensive Authorization System - Registration, Login, OAuth",
+    "description": {
+      "p1": "Authorization system based on NextJS 15+, React 19+, and",
+      "p2": "Prisma database. Full multilingual support thanks to the next-intl library",
+      "p3": "Use case scenarios can be found in",
+      "keywordp3": "/diagrams/usecases"
+    },
+    "buttons": {
+      "author": "by @wszostak8 - monolith version",
+      "diagrams": "View diagrams - GitHub"
+    }
+  },
+  "authorization": {
+    "Form": {
+      "loginHeader": "Sign in by",
+      "or": "or",
+      "registerHeader": "Sign up by",
+      "loginButton": "Sign in",
+      "loggingButton": "Sign in...",
+      "registerButton": "Sign up",
+      "registeringButton": "Sign up...",
+      "nameAndLastName": "Full name or company name",
+      "emailAddress": "E-mail address",
+      "password": "Password",
+      "repeatPassword": "Repeat password"
+    },
+
+    "LeftOverlayContent": {
+      "alreadyHaveAccount": "Already have an account?",
+      "clickButtonToLogIn": "Click a button below to sign in by form"
+    },
+
+    "RightOverlayContent": {
+      "dontHaveAccount": "Don't have an account?",
+      "clickButtonToRegisters": "Sign up by available form. Just click a button"
+    },
+
+    "ForgotPasswordOverlayContent": {
+      "hereByMistake": "Here you by mistake?",
+      "description": "Click a button bellow to back to sign up form",
+      "backToLoginButton": "Back to sign up"
+    },
+
+    "ResetPassword": {
+      "form": {
+        "title": "Reset password",
+        "description": "Enter your email address and we will send you a link for reset password",
+        "button": "Send reset link",
+        "sendingButton": "Sending..."
+      },
+      "sent": {
+        "title": "Email has been sent",
+        "description": "Check your mailbox. We have sent you a link to reset your password.",
+        "button": "Send again",
+        "info": {
+          "part1": "The link expires after 1 hour for security reasons.",
+          "part2": "Haven't received email? Please check your spam folder or try again."
+        }
+      },
+      "token": {
+        "valid": {
+          "title": "Set new password",
+          "description": "Enter a new password for your account.",
+          "form": {
+            "input1": "New password",
+            "input2": "Confirm new password"
+          },
+          "button": "Set new password",
+          "buttonSetting": "Setting..."
+        },
+        "validating": {
+          "title": "Checking link...",
+          "description": "Verifying the validity of the password reset link."
+        },
+        "invalid": {
+          "title": "Wrong link",
+          "description": "The password reset link is invalid or damaged.",
+          "button": "Send new link",
+          "info": {
+            "part1": "Check that you have copied the entire link from the email.",
+            "part2": "The link may have been damaged during copying."
+          }
+        },
+        "expired": {
+          "title": "Link expired",
+          "description": "This password reset link has expired or is invalid",
+          "button": "Send new link",
+          "info": {
+            "part1": "The link expires after 1 hour for security reasons.",
+            "part2": "You can request a new password reset link."
+          }
+        },
+        "success": {
+          "title": "Password has been changed",
+          "description": "Your password has been successfully updated. You can now sign in using your new password.",
+          "button": "Go to sign in"
+        }
+      }
+    },
+
+    "VerifyAccount": {
+      "sent": {
+        "title": "Check your mailbox",
+        "description": "We have sent a verification link to your email address.",
+        "info": {
+          "question": "What's next?",
+          "1": "Open your mailbox",
+          "2": "Find email from",
+          "3": "Click \"Confirm email\"",
+          "4": "Come back here and sign in",
+          "footer": {
+            "part1": "Haven't received email? Check your spam folder.",
+            "part2": "The verification link will expire in 24 hours."
+          }
+        }
+      },
+      "haveProblem": {
+        "part1": "Do you have problem?",
+        "part2": "Contact us"
+      },
+      "token": {
+        "required": {
+          "title": "Email verification required",
+          "description": "To sign in, you must to first verify your email address:",
+          "info": {
+            "part1": "Check your mailbox and click the verification link.",
+            "part2": "If you haven't received the email, you can resend it."
+          },
+          "button": "Resend the verification link",
+          "buttonSent": "Sending link..."
+        },
+        "validating": {
+          "title": "Checking link...",
+          "description": "Verifying the validity of the account verify link."
+        },
+        "invalid": {
+          "title": "Wrong link",
+          "description": "The verification account link is invalid or damaged.",
+          "info": {
+            "part1": "Check that you have copied the entire link from the email.",
+            "part2": "The link may have been damaged during copying."
+          }
+        },
+        "expired": {
+          "title": "Link expired",
+          "description": "This verification account link has expired or is invalid",
+          "button": "Send new link",
+          "info": {
+            "part1": "The link expires after 1 hour for security reasons."
+          }
+        },
+        "success": {
+          "title": "Email verified",
+          "description": "Your email address has been successfully confirmed. You can sign in now.",
+          "button": "Go to sign in"
+        }
+      }
+    },
+
+    "2FA": {
+      "title": "Code has been sent to",
+      "form": {
+        "label": "Enter 6-digit code from email",
+        "verifyButton": "Verify code",
+        "verifyingButton": "Verifying...",
+        "sendAgainButton": "Send code again",
+        "cooldownButton": "Send again"
+      },
+      "notReceived": "Don't received code?",
+      "expiryInfo": "Code expires in 10 minutes",
+      "rightOverlay": {
+        "title": "Two-factor verification",
+        "description": "We sent verification code to your email address. You can disable 2FA in dashboard settings",
+        "button": "Back to sign in",
+        "info": {
+          "part1": "Do you have problem?",
+          "part2": "Contact us"
+        }
+      }
+    }
+  },
+  "email": {
+    "common": {
+      "greeting": "Hello!",
+      "greetingWithName": "Hello {name}!",
+      "signature": "Best regards",
+      "teamName": "AuthSystem Team",
+      "footer": {
+        "automated": "This email was sent automatically. Please do not reply.",
+        "rights": "All rights reserved."
+      }
+    },
+    "verification": {
+      "title": "Verify Your Email Address",
+      "subject": "Verify your email address - AuthSystem",
+      "buttonText": "Verify Email",
+      "description": "Thank you for registering with AuthSystem. To complete your registration, please verify your email address by clicking the button below:",
+      "fallbackText": "If the button doesn't work, copy and paste this link in your browser:",
+      "linkText": "To verify your email, visit",
+      "importantInfo": {
+        "title": "Important information",
+        "expiry": "Link expires in 24 hours",
+        "oneTime": "Link can only be used once",
+        "ignore": "If you didn't register with AuthSystem, ignore this email"
+      },
+      "securityNote": "If you didn't request email verification, your account is secure and you can ignore this email."
+    },
+    "passwordReset": {
+      "title": "Password Reset",
+      "subject": "Password reset - AuthSystem",
+      "buttonText": "Reset Password",
+      "description": "We received a request to reset the password for your AuthSystem account.",
+      "fallbackText": "If the button doesn't work, copy and paste this link in your browser:",
+      "linkText": "To reset your password, visit",
+      "securityInfo": {
+        "title": "Security information",
+        "expiry": "Link expires in 1 hour",
+        "oneTime": "Link can only be used once",
+        "ignore": "If you didn't request a password reset, ignore this email",
+        "dontShare": "Never share this link with anyone"
+      },
+      "securityNote": "If you didn't request a password reset, your account is secure and you can ignore this email."
+    },
+    "twoFactor": {
+      "title": "Two-Factor Authentication Code",
+      "subject": "Two-factor authentication code - AuthSystem",
+      "description": "Someone is trying to log into your AuthSystem account. If this is you, use the verification code below:",
+      "enterCode": "Enter this code in the application",
+      "codeLabel": "VERIFICATION CODE",
+      "importantInfo": {
+        "title": "Important information",
+        "expiry": "This code expires in 10 minutes",
+        "onlyYou": "Only use it if you're trying to log in",
+        "dontShare": "Never share this code with anyone"
+      },
+      "securityNote": "If you're not trying to log in, ignore this email and consider changing your password."
+    }
+  },
+  "notifications": {
+    "auth": {
+      "messages": {
+        "oauth_login_success": "Successfully logged in via {provider}!",
+        "logout_success": "Logged out successfully",
+        "account_exists_credentials": "An account with this email already exists. Log in with password.",
+        "account_exists_oauth": "Account exists. Log in via: {providers}",
+        "email_send_failed": "Failed to send verification email. Try again.",
+        "registration_failed": "Registration failed",
+        "invalid_data": "Invalid data",
+        "invalid_email_password": "Invalid email or password",
+        "account_registered_via": "This email is registered via: {providers}. Use the appropriate login method.",
+        "login_successful": "Logged in successfully!",
+        "login_failed": "Login failed",
+        "login_error": "Login error",
+        "invalid_expired_token": "Invalid or expired verification token",
+        "email_verified_success": "Email has been successfully verified",
+        "verification_failed": "Verification failed",
+        "user_not_found": "User not found",
+        "email_already_verified": "Email is already verified",
+        "account_no_verification_needed": "This account does not require email verification",
+        "verification_email_failed": "Failed to send verification email",
+        "reset_email_success": "If the provided email exists in our database, we sent a password reset link.",
+        "reset_email_failed": "Failed to send password reset email",
+        "reset_link_failed": "Sending reset link failed",
+        "invalid_expired_reset": "Invalid or expired password reset link",
+        "account_cannot_reset": "This account cannot reset password this way",
+        "password_reset_success": "Password has been successfully changed. You can now log in.",
+        "password_reset_failed": "Password reset failed",
+        "token_valid": "Token is valid",
+        "token_validation_error": "Token validation error",
+        "twofa_not_enabled": "2FA is not enabled for this account",
+        "twofa_code_failed": "Failed to send 2FA code",
+        "twofa_code_sent": "2FA code has been sent to your email",
+        "twofa_no_active_code": "No active 2FA code. Try logging in again.",
+        "twofa_code_expired": "2FA code expired. Try logging in again.",
+        "twofa_code_invalid": "Invalid 2FA code",
+        "twofa_login_error": "Error during login after 2FA verification",
+        "twofa_verified_success": "2FA code has been verified. You have been logged in.",
+        "twofa_verification_failed": "2FA code verification failed"
+      }
+    }
+  }
+}

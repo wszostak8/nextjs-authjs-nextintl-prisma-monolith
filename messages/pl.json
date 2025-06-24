@@ -1,0 +1,289 @@
+{
+  "navigation": {
+    "Dashboard": "Panel klienta",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
+  "hero": {
+    "title": "Kompleksowy system autoryzacji - rejestracja, logowanie, OAuth",
+    "description": {
+      "p1": "System autoryzacji bazujący na NextJS 15+, React 19+, oraz",
+      "p2": "Prisma. Pełna obsługa wielojęzyczności dzięki bibliotece next-intl",
+      "p3": "Scenariusze przypadków użycia znajdują się w",
+      "keywordp3": "/diagrams/usecases"
+    },
+    "buttons": {
+      "author": "by @wszostak8 - wersja monolith",
+      "diagrams": "Zobacz diagramy - GitHub"
+    }
+  },
+  "authorization": {
+    "Form": {
+      "loginHeader": "Zaloguj się przez",
+      "or": "lub",
+      "registerHeader": "Zarejestruj się przez",
+      "loginButton": "Zaloguj się",
+      "loggingButton": "Logowanie...",
+      "registerButton": "Zarejestruj się",
+      "registeringButton": "Rejestracja...",
+      "nameAndLastName": "Imię i nazwisko lub nazwa firmy",
+      "emailAddress": "Adres e-mail",
+      "password": "Hasło",
+      "repeatPassword": "Powtórz hasło"
+    },
+
+    "LeftOverlayContent": {
+      "alreadyHaveAccount": "Masz już u nas konto?",
+      "clickButtonToLogIn": "Kliknij w przycisk poniżej, aby się zalogować"
+    },
+
+    "RightOverlayContent": {
+      "dontHaveAccount": "Nie masz u nas konta?",
+      "clickButtonToRegisters": "Zarejestruj się przy pomocy dostępnego formularza"
+    },
+
+    "ForgotPasswordOverlayContent": {
+      "hereByMistake": "Jesteś tu przypadkiem?",
+      "description": "Kliknij w przycisk poniżej, aby wrócić do logowania",
+      "backToLoginButton": "Wróć do logowania"
+    },
+
+    "ResetPassword": {
+      "form": {
+        "title": "Resetowanie hasła",
+        "description": "Wpisz swój adres e-mail, a my wyślemy Ci link do zrestartowania hasła.",
+        "button": "Wyślij link",
+        "sendingButton": "Wysyłanie..."
+      },
+      "sent": {
+        "title": "Email został wysłany",
+        "description": "Sprawdź swoją skrzynkę pocztową. Wysłaliśmy link do resetowania hasła.",
+        "button": "Wyślij ponownie",
+        "info": {
+          "part1": "Link wygaśnie za 1 godzinę ze względów bezpieczeństwa.",
+          "part2": "Nie otrzymałeś emaila? Sprawdź folder spam lub spróbuj ponownie."
+        }
+      },
+      "token": {
+        "valid": {
+          "title": "Ustaw nowe hasło",
+          "description": "Wprowadź nowe hasło dla swojego konta.",
+          "form": {
+            "input1": "Nowe hasło",
+            "input2": "Potwierdź nowe hasło"
+          },
+          "button": "Ustaw nowe hasło",
+          "buttonSetting": "Ustawianie..."
+        },
+        "validating": {
+          "title": "Sprawdzam link...",
+          "description": "Weryfikuję ważność linku resetowania hasła."
+        },
+        "invalid": {
+          "title": "Nieprawidłowy link",
+          "description": "Link resetowania hasła jest nieprawidłowy lub został uszkodzony.",
+          "button": "Wyślij nowy link",
+          "info": {
+            "part1": "Sprawdź, czy skopiowałeś pełny link z emaila.",
+            "part2": "Link mógł zostać uszkodzony podczas kopiowania."
+          }
+        },
+        "expired": {
+          "title": "Link wygasł",
+          "description": "Ten link resetowania hasła wygasł lub jest nieprawidłowy",
+          "button": "Wyślij nowy link",
+          "info": {
+            "part1": "Link wygasa po 1 godzinie ze względów bezpieczeństwa.",
+            "part2": "Możesz poprosić o nowy link resetowania hasła."
+          }
+        },
+        "success": {
+          "title": "Hasło zostało zmienione",
+          "description": "Twoje hasło zostało pomyślnie zaktualizowane. Możesz się teraz zalogować używając nowego hasła.",
+          "button": "Przejdź do logowania"
+        }
+      }
+    },
+
+    "VerifyAccount": {
+      "sent": {
+        "title": "Sprawdź swoją skrzynkę pocztową",
+        "description": "Wysłaliśmy link weryfikacyjny na Twój adres email.",
+        "info": {
+          "question": "Co dalej?",
+          "1": "Otwórz swoją skrzynkę pocztową",
+          "2": "Znajdź email od",
+          "3": "Kliknij \"Potwierdź email\"",
+          "4": "Wróć tutaj i zaloguj się",
+          "footer": {
+            "part1": "Nie otrzymałeś emaila? Sprawdź folder spam.",
+            "part2": "Link weryfikacyjny wygaśnie za 24 godziny."
+          }
+        }
+      },
+      "haveProblem": {
+        "part1": "Masz problem?",
+        "part2": "Skontaktuj się z nami"
+      },
+      "token": {
+        "required": {
+          "title": "Wymagana weryfikacja email",
+          "description": "Aby się zalogować, musisz najpierw zweryfikować swój adres email:",
+          "info": {
+            "part1": "Sprawdź swoją skrzynkę pocztową i kliknij link weryfikacyjny.",
+            "part2": "Jeśli nie otrzymałeś/aś emaila, możesz wysłać go ponownie."
+          },
+          "button": "Wyślij ponownie link weryfikacyjny",
+          "buttonSent": "Wysyłam link..."
+        },
+        "validating": {
+          "title": "Sprawdzam link...",
+          "description": "Weryfikuję ważność linku weryfikacji konta."
+        },
+        "invalid": {
+          "title": "Nieprawidłowy link",
+          "description": "Link weryfikacji konta jest nieprawidłowy lub został uszkodzony.",
+          "info": {
+            "part1": "Sprawdź, czy skopiowałeś pełny link z emaila.",
+            "part2": "Link mógł zostać uszkodzony podczas kopiowania."
+          }
+        },
+        "expired": {
+          "title": "Link wygasł",
+          "description": "Ten link resetowania hasła wygasł lub jest nieprawidłowy",
+          "button": "Wyślij nowy link",
+          "info": {
+            "part1": "Link wygasa po 1 godzinie ze względów bezpieczeństwa."
+          }
+        },
+        "success": {
+          "title": "Email zweryfikowany",
+          "description": "Twój adres email został pomyślnie potwierdzony. Możesz się teraz zalogować.",
+          "button": "Przejdź do logowania"
+        }
+      }
+    },
+
+    "2FA": {
+      "title": "Kod został wysłany na:",
+      "form": {
+        "label": "Wprowadź 6-cyfrowy kod z emaila",
+        "verifyButton": "Zweryfikuj kod",
+        "verifyingButton": "Weryfikowanie...",
+        "sendAgainButton": "Wyślij kod ponownie",
+        "cooldownButton": "Wyślij ponownie"
+      },
+      "notReceived": "Nie otrzymałeś kodu?",
+      "expiryInfo": "Kod wygaśnie za 10 minut",
+      "rightOverlay": {
+        "title": "Weryfikacja dwuetapowa",
+        "description": "Wysłaliśmy kod weryfikacyjny na adres e-mail na który próbujesz się zalogować",
+        "button": "Wróć do logowania",
+        "info": {
+          "part1": "Masz problem?",
+          "part2": "Skontaktuj się z nami"
+        }
+      }
+    }
+  },
+  "email": {
+    "common": {
+      "greeting": "Cześć!",
+      "greetingWithName": "Cześć {name}!",
+      "signature": "Pozdrawiamy",
+      "teamName": "Zespół AuthSystem",
+      "footer": {
+        "automated": "Ten email został wysłany automatycznie. Nie odpowiadaj na niego.",
+        "rights": "Wszystkie prawa zastrzeżone."
+      }
+    },
+    "verification": {
+      "title": "Potwierdź swój adres email",
+      "subject": "Potwierdź swój adres email - AuthSystem",
+      "buttonText": "Potwierdź email",
+      "description": "Dziękujemy za rejestrację w AuthSystem. Aby dokończyć proces rejestracji, potwierdź swój adres email klikając poniższy przycisk:",
+      "fallbackText": "Jeśli przycisk nie działa, skopiuj i wklej ten link w przeglądarce:",
+      "linkText": "Aby zweryfikować swój email, odwiedź",
+      "importantInfo": {
+        "title": "Ważne informacje",
+        "expiry": "Link wygaśnie za 24 godziny",
+        "oneTime": "Link może być użyty tylko jeden raz",
+        "ignore": "Jeśli nie rejestrowałeś się w AuthSystem, zignoruj ten email"
+      },
+      "securityNote": "Jeśli nie prosiłeś o weryfikację email, Twoje konto jest bezpieczne i możesz zignorować ten email."
+    },
+    "passwordReset": {
+      "title": "Resetowanie hasła",
+      "subject": "Resetowanie hasła - AuthSystem",
+      "buttonText": "Zresetuj hasło",
+      "description": "Otrzymaliśmy prośbę o zresetowanie hasła do Twojego konta AuthSystem.",
+      "fallbackText": "Jeśli przycisk nie działa, skopiuj i wklej ten link w przeglądarce:",
+      "linkText": "Aby zresetować hasło, odwiedź",
+      "securityInfo": {
+        "title": "Ważne informacje bezpieczeństwa",
+        "expiry": "Link wygaśnie za 1 godzinę",
+        "oneTime": "Link może być użyty tylko jeden raz",
+        "ignore": "Jeśli nie prosiłeś o reset hasła, zignoruj ten email",
+        "dontShare": "Nigdy nie udostępniaj tego linku nikomu"
+      },
+      "securityNote": "Jeśli nie prosiłeś o reset hasła, Twoje konto jest bezpieczne i możesz zignorować ten email."
+    },
+    "twoFactor": {
+      "title": "Kod weryfikacji dwuetapowej",
+      "subject": "Kod weryfikacji dwuetapowej - AuthSystem",
+      "description": "Ktoś próbuje zalogować się na Twoje konto AuthSystem. Jeśli to Ty, użyj poniższego kodu weryfikacji:",
+      "enterCode": "Wprowadź ten kod w aplikacji",
+      "codeLabel": "KOD WERYFIKACJI",
+      "importantInfo": {
+        "title": "Ważne informacje",
+        "expiry": "Ten kod wygaśnie za 10 minut",
+        "onlyYou": "Użyj go tylko jeśli to Ty próbujesz się zalogować",
+        "dontShare": "Nigdy nie udostępniaj tego kodu nikomu"
+      },
+      "securityNote": "Jeśli to nie Ty próbujesz się zalogować, zignoruj ten email i rozważ zmianę hasła."
+    }
+  },
+  "notifications": {
+    "auth": {
+      "messages": {
+        "oauth_login_success": "Zalogowano pomyślnie przez {provider}!",
+        "logout_success": "Wylogowano pomyślnie",
+        "account_exists_credentials": "Konto z tym emailem już istnieje. Zaloguj się hasłem.",
+        "account_exists_oauth": "Konto istnieje. Zaloguj się przez: {providers}",
+        "email_send_failed": "Nie udało się wysłać emaila weryfikacyjnego. Spróbuj ponownie.",
+        "registration_failed": "Rejestracja nie powiodła się",
+        "invalid_data": "Nieprawidłowe dane",
+        "invalid_email_password": "Nieprawidłowy email lub hasło",
+        "account_registered_via": "Ten email jest zarejestrowany przez: {providers}. Użyj odpowiedniej metody logowania.",
+        "login_successful": "Zalogowano pomyślnie!",
+        "login_failed": "Logowanie nie powiodło się",
+        "login_error": "Błąd logowania",
+        "invalid_expired_token": "Nieprawidłowy lub wygasły token weryfikacyjny",
+        "email_verified_success": "Email został pomyślnie zweryfikowany",
+        "verification_failed": "Weryfikacja nie powiodła się",
+        "user_not_found": "Użytkownik nie został znaleziony",
+        "email_already_verified": "Email jest już zweryfikowany",
+        "account_no_verification_needed": "To konto nie wymaga weryfikacji email",
+        "verification_email_failed": "Nie udało się wysłać emaila weryfikacyjnego",
+        "reset_email_success": "Jeśli podany email istnieje w naszej bazie, wysłaliśmy link do resetowania hasła.",
+        "reset_email_failed": "Nie udało się wysłać emaila z linkiem resetowania hasła",
+        "reset_link_failed": "Wysyłanie linku resetowania nie powiodło się",
+        "invalid_expired_reset": "Nieprawidłowy lub wygasły link resetowania hasła",
+        "account_cannot_reset": "To konto nie może resetować hasła w ten sposób",
+        "password_reset_success": "Hasło zostało pomyślnie zmienione. Możesz się teraz zalogować.",
+        "password_reset_failed": "Resetowanie hasła nie powiodło się",
+        "token_valid": "Token jest ważny",
+        "token_validation_error": "Błąd weryfikacji tokenu",
+        "twofa_not_enabled": "2FA nie jest włączone dla tego konta",
+        "twofa_code_failed": "Nie udało się wysłać kodu 2FA",
+        "twofa_code_sent": "Kod 2FA został wysłany na Twój email",
+        "twofa_no_active_code": "Brak aktywnego kodu 2FA. Spróbuj zalogować się ponownie.",
+        "twofa_code_expired": "Kod 2FA wygasł. Spróbuj zalogować się ponownie.",
+        "twofa_code_invalid": "Nieprawidłowy kod 2FA",
+        "twofa_login_error": "Błąd podczas logowania po weryfikacji 2FA",
+        "twofa_verified_success": "Kod 2FA został zweryfikowany. Zostałeś zalogowany.",
+        "twofa_verification_failed": "Weryfikacja kodu 2FA nie powiodła się"
+      }
+    }
+  }
+}
